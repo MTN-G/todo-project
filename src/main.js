@@ -15,15 +15,15 @@ addButton.onclick = function(){
     // text
     let div1 = document.createElement("text");
     div1.setAttribute("class", "todoText");
-    div1.textContent = task;
+    div1.textContent = task ;
     // date N time
     let div2 = document.createElement("createdat");
     div2.setAttribute("class", "todoCreatedAt");
-    div2.textContent = time;
+    div2.textContent = time ;
     // priority
     let div3 = document.createElement("priority");
     div3.setAttribute("class", "todoPriority");
-    div3.textContent = priority;
+    div3.textContent = priority ;
     // stracture in html
     view.appendChild(container);
     container.appendChild(div3);
