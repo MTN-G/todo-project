@@ -64,19 +64,29 @@ addButton.onclick = function(){
     container.appendChild(del);
     container.appendChild(done);
 
+    myArray.push([div3.textContent, container, hr]);
+    myArray.sort()
+       .reverse();
+
+    console.log(myArray)
+    
+
     
 
 };
 
-myArray.sort()
-       .reverse();
-let nodeList = document.querySelectorAll("div");
-let obj = {}
+      
 
 
 //when click sort
-sortButton.onclick = function(){  
-} 
+sortButton.onclick = function(){
+     for (let i = 0; i < myArray.length; i++){
+         view.appendChild(myArray[i][1]);
+         view.appendChild(myArray[i][2]);
+     }  
+    
+    } 
+ 
 
 
 
