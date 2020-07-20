@@ -48,6 +48,7 @@ addButton.onclick = function(){
     del.onclick = function(){
         view.removeChild(container);
         view.removeChild(hr);
+        let x = myArray.indexOf(container)
         counter.textContent = document.getElementsByClassName("todoContainer").length;
     }
 
@@ -68,7 +69,7 @@ addButton.onclick = function(){
     myArray.sort()
        .reverse();
 
-    console.log(myArray)
+    console.log(myArray.indexOf(container))
     
 
     
